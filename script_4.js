@@ -24,3 +24,36 @@ for (let i = 1; i <= length; i++) {
     result += '\n';
 }
 console.log(result);
+
+////////////////////////////////////
+
+ for (let i = 2; i <= 16; i++) {
+     if (i % 2 === 0) {
+         continue;
+     } else {
+         console.log(i);
+     }
+ }
+
+
+
+let i = 2;
+
+while (i < 16) {
+    if (i % 2 === 0) {
+        i++; // Увеличиваем перед тем, как выйти из итерации
+        continue;
+    } else {
+        console.log(i);
+    }
+    i++;
+}
+
+
+let arr = [];
+
+for (let i = 5; i < 11; i++) {
+    arr[i - 5] = i;
+}
+
+console.log(arr);
